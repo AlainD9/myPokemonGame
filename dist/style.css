@@ -1,0 +1,112 @@
+* {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    margin: 1%;
+}
+
+button {
+    margin: 2%;
+}
+
+.pokemon {
+    width: calc(30%);
+    margin: 5px;
+}
+
+.pokemon img {
+    width: 100%;
+}
+
+.pokemon h2 {
+    font-size: var(--font-size-h2);
+}
+
+.pokemon h3 {
+    font-size: var(--font-size-h3);
+}
+
+.pokemon p {
+    font-size: var(--font-size-p);
+}
+
+#pokemonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 1150px) {
+    :root {
+        --font-size-h2: 24px;
+        --font-size-h3: 18px;
+        --font-size-p: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --font-size-h2: 20px;
+        --font-size-h3: 16px;
+        --font-size-p: 13px;
+    }
+}
+
+@media (max-width: 755px) {
+    :root {
+        --font-size-h2: 18px;
+        --font-size-h3: 14px;
+        --font-size-p: 11px;
+    }
+    
+    #pokemonContainer {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --font-size-h2: 16px;
+        --font-size-h3: 12px;
+        --font-size-p: 9px;
+    }
+}
+
+@media (max-width: 560px) {
+    :root {
+        --font-size-h2: 14px;
+        --font-size-h3: 10px;
+        --font-size-p: 7px;
+    }
+}
+
+@media (max-width: 460px) {
+    :root {
+        --font-size-h2: 12px;
+        --font-size-h3: 8px;
+        --font-size-p: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    :root {
+        --font-size-h2: 10px;
+        --font-size-h3: 6px;
+        --font-size-p: 3px;
+    }
+}
+
+@media (max-width: 290px) {
+    :root {
+        --font-size-h2: 8px;
+        --font-size-h3: 4px;
+        --font-size-p: 1px;
+    }
+}
+
+@media (min-width: 1150px) {
+    body {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+}
